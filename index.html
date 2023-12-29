@@ -74,21 +74,22 @@
                 Le modèle a été entrainé sur une base d'image issue d'un scrapping de pixelfed. 
                 \nPour plus de détails vous pouvez retrouver ci-dessous le lien du rapport : </p>
                 <p><a href="https://github.com/REDSprod/REDS/blob/main/rapport.pdf" download="rapport.pdf">Rapport</a></p>
+            
             <h2>Image Docker</h2>
-            <p>Lien vers l'image Docker : <a href="#">ici</a> </p>
+            <p>Lien vers l'image Docker : <a href="https://hub.docker.com/repository/docker/redsprod/reds/general">ici</a></p>
             
             <h2>Tutorial</h2>
             <ul>
                 <li>Prerequis : Docker doit être installer sur la machine</li>
-                <li>Etape 1: Lancer le conteneur à partir de l'image Docker <code> docker run -p 8080:5000 reds_pred:tag </code> </li>
-                <li>Etape 2: Ouvrir le deuxième lien http dans un navigateur ou http://127.0.0.1:8080/ ou http://localhost:8080 </li>
+                <li>Etape 1: En ligne de commande Bash, se placer dans son dossier courant et lancer <code>docker pull redsprod/reds:v1</code> </li>
+                <li>Etape 2: Lancer le conteneur à partir de l'image Docker <code> docker run -p 8080:5000 reds_pred:tag </code> (si port 8080 déjà occupé, choisir un autre) </li>
+                <li>Etape 2: Ouvrir le deuxième lien http dans un navigateur ou http://127.0.0.1:8080/ ou http://localhost:8080 (si un autre port que 8080 à été choisi indiqué celui-ci)</li>
                 <li>Etape 3: Cliquer sur "choisir un fichier pour uploader l'image dont vous souhaitez réaliser le tagging</li>
                 <li>Etape 4: Cliquer sur "process image" pour lancer la prédiction du tagging </li>
                 <li>Etape 5: Le tag de votre image s'affiche en haut de celle-ci </li>
             </ul>
+            
         </div>
-
     </div>
 </body>
 </html>
-
