@@ -1,21 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tagger une Image</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>RDFIA - Master DAC - Sorbonne University</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #000;
+            text-align: center;
+        }
+        a {
+            color: #1a0dab;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .content h2 {
+            text-align: left;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .content p, .content ul {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #333;
+        }
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .content ul li {
+            margin-bottom: 10px;
+        }
+        .content ul li a {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Tagger une Image</h1>
-        <form id="upload-form" enctype="multipart/form-data">
-            <input type="file" id="file-input" accept="image/*" required>
-            <button type="button" id="tag-button" onclick="tagImage()">Tag</button>
-        </form>
-        <div id="tag-result"></div>
+        <h1>REDS - Image Tagging</h1>
+        <div class="content">
+            <p>Cette page contient le travail réalisé par LUCAS Garance, ZIDAT Lydia, BOUCHOUCHI Nour, BORCHANI Sofia
+                et FAURE Guillaume.</p>
+            
+            <h2>Introduction</h2>
+            <p>L'objectif de ce projet est d’entraîner 
+                un modèle supervisé de machine learning à tagger automatiquement 
+                des images avec une étiquette textuelle qui reflète le contenu visuel de l’image. 
+                Dans notre projet, nous avons pris en considération cinq tags : dog, cat, bird, car et flower.
+                Le modèle a été entrainé sur une base d'image issue d'un scrapping de pixelfed. 
+                \nPour plus de détails vous pouvez retrouver ci-dessous le lien du rapport : </p>
+                <p><a href="https://github.com/REDSprod/REDS/blob/main/rapport.pdf" download="rapport.pdf">Rapport</a></p>
+            <h2>Image Docker</h2>
+            <p>Lien vers l'image Docker : <a href="#">ici</a> </p>
+            
+            <h2>Tutorial</h2>
+            <ul>
+                <li>Group 1: 14/15 501 (First TP session with Nicolas Thome)</li>
+                <li>Group 2: 14/15 502 (First TP session with Alasdair Newson)</li>
+                <li>Group 3: 14/15 407 (First TP session with Mustafa Shukor)</li>
+                <li>First class: fill the form <a href="#">here</a> for being registered in Moodle!</li>
+                <li>Mattermost: register <a href="#">here</a>, select RDFIA channel</li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>All coding sessions will be done in Python3 and we'll use several libraries. Here are some useful links if you're rusty:</p>
+            <ul>
+                <li><a href="#">About Python</a></li>
+                <li><a href="#">About NumPy</a></li>
+                <li><a href="#">About Scikit-Learn</a></li>
+                <li><a href="#">About PyTorch</a></li>
+            </ul>
+        </div>
     </div>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
 
